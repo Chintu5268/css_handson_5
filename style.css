@@ -8,6 +8,7 @@ h1 {
 }
 
 .box {
+  background-color: #fef848;
 
   box-sizing: border-box;
   width: 350px;
@@ -21,10 +22,7 @@ h1 {
 
 }
 
-.box {
-  background-color: #fef848;
 
-}
 
 .box1 {
   background-color: #518991;
@@ -285,39 +283,39 @@ ol {
 
 }
 
-.city img {
-  width: 100%;
+.city {
+  width: 1000%;
+  height: 250px;
   position: absolute;
   top: 225px;
-  animation: city 1s;
-  transition-duration: 1m;
-  transition-delay: 0.5s;
-  animation-iteration-count: infinite;
+  background-image: url('img/city.png');
   background-repeat: repeat-x;
+  animation-name: city-ani;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
-@keyframes city {
-  from {
-    transform: translateX(1500px);
+@keyframes city-ani {
+  100% {
+    transform: translateX(-1500px);
   }
 }
 
-.road img {
-  height: 200px;
-  width: 100%;
+.road {
+  width: 1000%;
+  height: 250px;
   position: absolute;
   top: 455px;
-  animation: road 2ms;
-  transition-duration: 0.8s;
-  transition-delay: 0.5s;
-  animation-iteration-count: infinite;
+  background-image: url('img/road.jpg');
   background-repeat: repeat-x;
-
+  animation-name: road;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
 @keyframes road {
-  from {
-    transform: translateX(500px);
+  100% {
+    transform: translateX(-1500px);
   }
 }
 
@@ -388,5 +386,5 @@ ol {
   height: 100px;
   position: absolute;
   top: 410px;
-  right: 600px;
+  right: 590px;
 }
